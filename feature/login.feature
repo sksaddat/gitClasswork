@@ -12,7 +12,6 @@ Feature: Title of your feature
     And I click the Accounts tab
     And I click the new button
     And I should see Account Name field
-    And I should see Account Number field
+    And I should see Account Number field("10101001")
     And i should see Type field with different option
-    When I click Save button
     Then I should see the record
