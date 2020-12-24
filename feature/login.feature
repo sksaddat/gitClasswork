@@ -2,8 +2,9 @@
 Feature: Title of your feature
   I want to use this template for my feature file
 
-  @accounts @regression
+  @smokeTest
   Scenario: Verify all the fields are present in the Accounts object
+   Given I open chrome browser
     And I enter  username "test.user@gmail.com.test"
     And I enter  password "Pa55word"
     When I click the login button

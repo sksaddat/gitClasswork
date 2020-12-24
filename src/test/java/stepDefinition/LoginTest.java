@@ -3,11 +3,18 @@ package stepDefinition;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import utilities.BaseClass;
 
-public class LoginTest {
+public class LoginTest extends BaseClass {
+	
+	@Given("^I open chrome browser$")
+	public void i_open_chrome_browser() {
+		openBrowser();
+	}
+
 	@Given("^I enter  username \"([^\"]*)\"$")
 	public void i_enter_username(String arg1) {
-		System.out.println("method works");
+		
 	}
 
 	@Given("^I enter  password \"([^\"]*)\"$")

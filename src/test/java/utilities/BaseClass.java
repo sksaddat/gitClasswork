@@ -1,4 +1,4 @@
-package Utilities;
+package utilities;
 
 import java.util.concurrent.TimeUnit;
 
@@ -12,5 +12,6 @@ System.setProperty("webdriver.chrome.driver","/Users/salwasaddat/Desktop/Desktop
 driver = new ChromeDriver();
 driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 driver.manage().timeouts().pageLoadTimeout(5, TimeUnit.SECONDS);
+driver.get("https://login.salesforce.com");
 }
 }
